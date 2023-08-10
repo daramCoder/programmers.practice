@@ -9,6 +9,9 @@ public class num_30_string_reverse {
             for(int i = my_string.length() - 1; i >=0; i-- ){
                 answer = answer + my_string.charAt(i);
             }
+
+
+
             return answer;
         }
     }
