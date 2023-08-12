@@ -7,6 +7,8 @@ public class num_34_remove_string {
         public String solution(String my_string, String letter) {
             String answer = "";
             return  my_string.replace(letter, "");
+
+            // "letter" 로 했는데 , 프로그래머스에서는 오류가 났다.
         }
     }
 
