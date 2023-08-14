@@ -18,7 +18,6 @@ public class num_37_diagnosis_order {
             }
            Arrays.sort(arr, Collections.reverseOrder());
 
---------------
 //            int[] answer = new int[emergency.length];
 //            ArrayList<Integer> newEmergency = new ArrayList<Integer>(); //arraylist를 하나 만듬
 //            for (int i : emergency) {                                 //매개변수로 들어온 int배열을 하나씩 arraylist에 넣음
