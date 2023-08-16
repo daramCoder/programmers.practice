@@ -1,8 +1,6 @@
-import java.util.Arrays;
-
 public class num19_mode {
 
-    class Solution {
+    static class Solution {
         public static int solution(int[] array) {
             int answer = 0;
             int[] index = new int[1000 + 1];
