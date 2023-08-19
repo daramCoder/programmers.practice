@@ -3,6 +3,9 @@ package num_41_50;
 import java.util.Arrays;
 
 public class num_50_sort_String {
+
+    private String name;
+
     public static void main(String[] args) {
 
     }
@@ -22,6 +25,7 @@ public class num_50_sort_String {
 
             String[] arr = my_string.split(""); // String 숫자를 String 배열로 집어넣기
             int[] answer = new int[arr.length]; // int[] answer = {}; 왜 이게 아니라 길이를 제한해줘야지?
+
 
             for (int i = 0; i < arr.length; i++) {
                 answer[i] = Integer.parseInt(arr[i]); //String 배열을  int 배열로 집어 넣기
