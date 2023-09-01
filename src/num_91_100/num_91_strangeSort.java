@@ -30,7 +30,7 @@ public class num_91_strangeSort {
             return Arrays.stream(numlist)
                     .boxed() // boxing 처럼 원시타입을 클래스타입으로 전환해준다.
                     .sorted(Comparator.reverseOrder())  // 내림차순으로 정렬
-                    .sorted((o1, o2) -> Math.abs(o1 - n) - Math.abs(o2 - n))   // 절대값이 작은 것 부터  //n과 가까운 수부터 정렬
+                    // .sorted((o1, o2) -> Math.abs(o1 - n) - Math.abs(o2 - n))   내림차순으로 정렬
                     .mapToInt(Integer::intValue) // 스트림을 IntStream으로 변환
                     .toArray(); // 스트림을 배열로 변환하는 방법
         }
