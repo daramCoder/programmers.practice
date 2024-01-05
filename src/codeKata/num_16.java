@@ -14,8 +14,10 @@ public class num_16 {
 ////            }
 ////            return answer;
 //        }
+
+    // 맞는 코드
     class Solution {
-        // 맞는 코드
+
         public long[] solution(int x, int n) {
             long[] answer = new long[n];
             long lnum = (long) x;

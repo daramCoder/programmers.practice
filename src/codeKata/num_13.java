@@ -8,6 +8,7 @@ public class num_13 {
     public class Solution {
         public int solution(int n) {
             int answer = 0;
+
            String[] arr = String.valueOf(n).split(""); // 나누고
             for (int i = 0; i < arr.length; i++) { // 배열에 넣고
                 answer += Integer.parseInt(arr[i]);  // 다 더한다.
