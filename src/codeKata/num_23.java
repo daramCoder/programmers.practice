@@ -14,7 +14,7 @@ public class num_23 {
         public int solution(long num) {
             int answer = 0;
 
-           while(num != 1){  // 1이 아닐동안 반복! 1이면 진행하지 ㅏㅇㄴㅎ게
+           while(num != 1){  // 1이 아닐동안 반복! 1이면 진행하지 않게
                if (num % 2 == 0){
                    num = num / 2;
                }
@@ -33,7 +33,7 @@ public class num_23 {
 
 // 처음 시도 -- 너무 길다!
     class Solution2 {
-        public int solution(long num) {
+        public int solution(int num) {
             int answer = 0;
             int count = 0;
             if (num == 1) {
