@@ -19,5 +19,4 @@ public class num_24 {
             return answer;
         }
     }
-
 }
