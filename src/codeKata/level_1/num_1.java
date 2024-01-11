@@ -1,4 +1,4 @@
-package codeKata;
+package codeKata.level_1;
 
 public class num_1 {
     class Solution {
