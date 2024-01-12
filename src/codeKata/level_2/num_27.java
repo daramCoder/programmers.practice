@@ -1,4 +1,4 @@
-package codeKata;
+package codeKata.level_2;
 // 핸드폰 번호 가리기
 
 public class num_27 {

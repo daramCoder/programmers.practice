@@ -1,10 +1,7 @@
-package codeKata;
-
-import com.sun.jdi.IntegerValue;
+package codeKata.level_2;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Scanner;
 
 // 자연수 뒤집어 배열로 만들기
 // 자연수 n을 뒤집어 각 자리 숫자를 원소로 가지는 배열 형태로 리턴해주세요.

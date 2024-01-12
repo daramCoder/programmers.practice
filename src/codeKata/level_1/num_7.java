@@ -1,4 +1,4 @@
-package codeKata;
+package codeKata.level_1;
 // 두 수의 나눗셈
 public class num_7 {
 

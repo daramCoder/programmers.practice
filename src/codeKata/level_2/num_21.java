@@ -1,4 +1,4 @@
-package codeKata;
+package codeKata.level_2;
 
 // 하샤드 수
 //문제 설명

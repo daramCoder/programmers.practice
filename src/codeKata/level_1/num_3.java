@@ -1,4 +1,4 @@
-package codeKata;
+package codeKata.level_1;
 // 몫 구하기
 public class num_3 {
     class Solution {

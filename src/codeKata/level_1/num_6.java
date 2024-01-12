@@ -1,4 +1,4 @@
-package codeKata;
+package codeKata.level_1;
 // 두수의 합
 public class num_6 {
     class Solution {

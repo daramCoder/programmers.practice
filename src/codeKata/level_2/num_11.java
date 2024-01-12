@@ -1,4 +1,4 @@
-package codeKata;
+package codeKata.level_2;
 // 짝수와 홀수
 public class num_11 {
     public String solution(int num) {

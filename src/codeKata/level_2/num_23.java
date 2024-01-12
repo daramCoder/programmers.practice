@@ -1,4 +1,4 @@
-package codeKata;
+package codeKata.level_2;
 
 //콜라츠 추측
 // 주어진 수가 1이 될대까지 다음 작업을 반복.

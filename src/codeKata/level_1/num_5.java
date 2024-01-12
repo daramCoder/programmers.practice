@@ -1,4 +1,4 @@
-package codeKata;
+package codeKata.level_1;
 // 숫자비교하기
 public class num_5 {
     class Solution {

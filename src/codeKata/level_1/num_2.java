@@ -1,4 +1,4 @@
-package codeKata;
+package codeKata.level_1;
 // 두 수의 곱
 public class num_2 {
     class Solution {

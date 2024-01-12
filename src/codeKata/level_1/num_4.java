@@ -1,4 +1,4 @@
-package codeKata;
+package codeKata.level_1;
 
 //나이 출력
 public class num_4 {
