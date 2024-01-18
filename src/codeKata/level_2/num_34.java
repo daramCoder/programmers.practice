@@ -1,7 +1,6 @@
 package codeKata.level_2;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 //문자열 내림차순으로 배치하기
 //    문제 설명
