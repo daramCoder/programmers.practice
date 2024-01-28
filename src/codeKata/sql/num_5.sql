@@ -57,3 +57,9 @@ FROM ANIMAL_INS
 WHERE ANIMAL_TYPE = 'Dog'
   and Name LIKE '%EL%'
 ORDER BY NAME
+
+
+-- 나이 정보가 없는 회원수 구하기
+SELECT count(USER_ID) as USERS
+FROM USER_INFO
+WHERE AGE is NULL
