@@ -57,3 +57,9 @@ SELECT count(USER_ID) as USERS
 FROM USER_INFO
 WHERE YEAR(JOINED) = '2021'
   AND 20 <= AGE AND AGE <= 29;
+
+-- 중성화 여부 파악하기
+SELECT ANIMAL_ID, NAME,
+       IF (SEX_UPON_INTAKE like 'Neutered%' or  SEX_UPON_INTAKE like 'Spayed%', 'O', 'X') AS '중성화'
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID
