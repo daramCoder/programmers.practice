@@ -38,6 +38,7 @@ public class Num_66 {
             String target = targets[i]; // ABCD
             int count = 0;
             boolean flag = true;
+            
             for (char c : target.toCharArray()) { // A, B, C, D
                 if(keypad.containsKey(c)){  // target 첫번째 알파멧 A 포함하면
                     count += keypad.get(c); // 알파멧의 인덱스인 1을 가지고 온다.
