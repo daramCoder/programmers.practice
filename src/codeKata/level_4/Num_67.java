@@ -25,9 +25,13 @@ public class Num_67 {
                 ++stringStoChar; // 다음 알파벳
 //                System.out.println("count : " + count + ", stringStoChar : "+ stringStoChar );
 
-                if (stringStoChar > 'z')
+                if (stringStoChar > 'z') // Z 넘으면 다시 A로 되게
                     stringStoChar -= 26;
                 if (skip.contains(stringStoChar + "")) {  //wbqd 중에 있으면
+                    //contains는  CharSequence 가 와야해서 위에처럼 문자열로 반환해주거나
+                    // 아래처럼 바꿔주거나!
+                    //if (skip.contains(String.valueOf(stringStoChar))) {
+
 //                    System.out.println("skip : " + (stringStoChar+"") );
                     continue; // 지나치고
                 } else
