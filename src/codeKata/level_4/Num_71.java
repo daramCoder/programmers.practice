@@ -67,14 +67,15 @@ public class Num_71 {
     }
     // ==============================================
     public static int[] solution3(String today, String[] terms, String[] privacies) {
+        ArrayList<Integer> answerList = new ArrayList<>();
         HashMap<String, Integer> termsMap = new HashMap<>();
         for(String item : terms){
-            String[] temp = item.split(" ");  // A, 6, B, 12, C, 3
-            termsMap.put(temp[0], Integer.parseInt(temp[1])); // 약관종류,유효기간 A,6   B,12   C,3
+            String[] temp = item.split(" ");  // "A 6" -> A, 6
+            termsMap.put(temp[0], Integer.parseInt(temp[1])); //  (A,6)  (약관종류,유효기간)
         }
-        ArrayList<Integer> answerList = new ArrayList<>();
-        String[] todayArr = today.split("\\."); // 오늘 날짜 "2022.05.19"
+
         // 오늘 날짜 구하기
+        String[] todayArr = today.split("\\."); // "2022" "05" "19"
         // 연월일을 총 날짜수로 변환하는 식 :  (연도 * 12개월 * 28일) + (월 * 28일) + 일
         int todayDate = (Integer.parseInt(todayArr[0]) * 12 * 28) + (Integer.parseInt(todayArr[1]) * 28) + (Integer.parseInt(todayArr[2]));
 
