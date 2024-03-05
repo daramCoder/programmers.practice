@@ -10,7 +10,7 @@ public class num_64 {
         int[] lost = {2, 4};
         int[] reserve = {3};
 //        solution1(n, lost, reserve);
-        solution2(n, lost, reserve);
+       solution2(n, lost, reserve);
     }
 
 
