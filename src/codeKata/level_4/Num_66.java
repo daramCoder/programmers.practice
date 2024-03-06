@@ -13,7 +13,46 @@ public class Num_66 {
 
     }
 
-    public static int[] solution(String[] keymap, String[] targets) {
+    // 앞부분 뒷부분 합침( solution 앞부분 , solution 1 뒷부분)
+    public static int[] solution3(String[] keymap, String[] targets) {
+            int[] answer = new int[targets.length];
+
+            HashMap<Character, Integer> keypad = new HashMap<>();
+
+            for (int i = 0; i < keymap.length; i++) {   // ABACD, BCEFD
+                for (int j = 0; j < keymap[i].length(); j++) { // ABACD
+                    char c  = keymap[i].charAt(j); // A, B, A, C, D
+
+                    if(keypad.containsKey(c)){
+                        int inx = keypad.get(c);  // Index
+                        keypad.put(c, Math.min(inx, j + 1)); // index, 순서대로 한거랑 비교
+                    }
+                    else keypad.put(c, j+1); // 없으면!! 저장! c(알파벳), 순서 1,2,3,4,5
+
+                }
+            }
+
+            for(int i=0; i< targets.length;i++){
+                int sum = 0;
+                for(int j=0; j<targets[i].length();j++){
+
+                    char ch = targets[i].charAt(j);
+
+                    if(keypad.containsKey(ch)){
+                        sum+=keypad.get(ch);
+                    }else{
+                        sum = -1;
+                        break;
+                    }
+                }
+                answer[i] = sum;
+            }
+
+            return answer;
+        }
+
+
+        public static int[] solution(String[] keymap, String[] targets) {
         int[] answer = new int[targets.length];
         HashMap<Character,Integer> map = new HashMap<>();
 
