@@ -16,13 +16,12 @@ public class Num_73 {
 
             // 시작위치 구하기
             for(int i = 0; i < park.length; i++){
-                arr[i] = park[i].toCharArray();
-
+                arr[i] = park[i].toCharArray();  //arr[0] -> "S", "0", "0"
+                                                 // arr[0][0] = "S", arr[0][1] = "0", arr[0][2] = "0"으로 저장
                 if(park[i].contains("S")){
                     sx = i;
                     sy = park[i].indexOf("S");
                 }
-//                System.out.println(" arr[][] " + arr[i][i]); // S, O, O
             }
             // 이동방향, 거리 구하기
             for(String s : routes){
