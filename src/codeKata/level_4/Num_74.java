@@ -15,11 +15,48 @@ public class Num_74 {
         solution3(id_list, report, k);
     }
 
-    public static int[] solution(String[] id_list, String[] report, int k) {
+
+
+    public static int[] solution3(String[] id_list, String[] report, int k) {
         int[] answer = new int[id_list.length];
 
-        HashMap<String, String> reportSet = new HashMap<>();
+        Map<String, HashSet<String>> map = new HashMap<>();
+        Map<String, Integer> idxMap = new HashMap<>();
+
+        for (int i = 0; i < id_list.length; i++) {
+            String name = id_list[i];
+            map.put(name, new HashSet<>());
+            idxMap.put(name, i);
+        }
+
+        for (String s : report) {
+            String[] str = s.split(" ");
+            String from = str[0];
+            String to = str[1];
+            map.get(to).add(from);
+        }
+
+        for (int i = 0; i < id_list.length; i++) {
+            HashSet<String> send = map.get(id_list[i]);
+            if (send.size() >= k) {
+                for (String name : send) {
+                    answer[idxMap.get(name)]++;   // answer[0] (muzi임) +1  answer[1] (appeach임) = + 1
+                }
+            }
+        }
+        // 답 확인
+        for (int i : answer) {
+            System.out.println("answer : " + i);
+        }
+        return answer;
+    }
+
+
+
+    public static int[] solution(String[] id_list, String[] report, int k) {
+        int[] answer = new int[id_list.length];
         HashMap<String, Integer> id_listSet = new HashMap<>();
+        HashMap<String, String> reportSet = new HashMap<>();
 
         for (int i = 0; i < id_list.length; i++) {
             id_listSet.put(id_list[i], 0);
@@ -71,40 +108,6 @@ public class Num_74 {
         }
 
         System.out.println(answer);
-        return answer;
-    }
-
-    public static int[] solution3(String[] id_list, String[] report, int k) {
-        int[] answer = new int[id_list.length];
-        Map<String, HashSet<String>> map = new HashMap<>();
-        Map<String, Integer> idxMap = new HashMap<>();
-
-        for (int i = 0; i < id_list.length; i++) {
-            String name = id_list[i];
-            map.put(name, new HashSet<>());
-            idxMap.put(name, i);
-        }
-
-        for (String s : report) {
-            String[] str = s.split(" ");
-            String from = str[0];
-            String to = str[1];
-            map.get(to).add(from);
-        }
-
-        for (int i = 0; i < id_list.length; i++) {
-            HashSet<String> send = map.get(id_list[i]);
-            if (send.size() >= k) {
-                for (String name : send) {
-                    answer[idxMap.get(
-                        name)]++;   // answer[0] (muzi임) +1  answer[1] (appeach임) = + 1
-                }
-            }
-        }
-        // 답 확인
-        for (int i : answer) {
-            System.out.println("answer : " + i);
-        }
         return answer;
     }
 }
