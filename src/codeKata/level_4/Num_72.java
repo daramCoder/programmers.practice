@@ -81,7 +81,7 @@ public class Num_72 {
         //
         for (String calling : callings) {
             int grade = map.get(calling);    // 추월한 사람의 순위
-            String forwardCalling = players[grade - 1];  // 앞사람의 순위
+            String forwardCalling = players[grade - 1];  // 앞사람
 
             players[grade - 1] = calling; // 앞사람 순위의 추월한 사람으로 변경
             map.put(calling, grade - 1);  // 추월한 사람, 추월하여 갖게 된 순위
