@@ -1,5 +1,6 @@
 package codeKata.level_4;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -50,9 +51,11 @@ public class 달리기경주72 {
             map.put(forwardPlayer, rank);// 앞사람, 이전 순위
         }
         // 답 확인
-        for (int i = 0; i < players.length; i++) {
-            System.out.println(players[i]);
+        for (String player: players) {
+            System.out.println(player);
         }
+
+        Arrays.stream(players).forEach(System.out::println);
 
         return players;
     }
