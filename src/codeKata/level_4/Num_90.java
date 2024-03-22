@@ -45,8 +45,6 @@ public class Num_90 {
             Integer count = map.getOrDefault(type, 0);  // headgear가 없다 1 , 두번째 headgear를 넣을때는 이미 1이 들어가있음
             map.put(type, count + 1);  // 경우의수 (+ 1 해줘야함, 안입는 경우를 포함)
         }
-        // headgear,
-        // headgear면 , 아니면 1
         // key값을 돌면서, key 값의 갯수
         for (String key: map.keySet()) {
             answer *= map.get(key) + 1;
