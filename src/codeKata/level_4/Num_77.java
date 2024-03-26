@@ -1,7 +1,7 @@
 package codeKata.level_4;
 
+// 이진변환 반복하기 푸는 중
 public class Num_77 {
-
     public static void main(String[] args) {
         int n = 3;
         fibonachi(n);
