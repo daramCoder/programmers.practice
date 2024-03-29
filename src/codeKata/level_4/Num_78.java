@@ -12,6 +12,7 @@ public class Num_78 {
         answer[0] = 0;
         answer[1] = 1;
 
+        // F(n) = F(n-1) + F(n-2)
         for (int i = 2; i <= n; i++) {
             answer[i] = (answer[i - 1] + answer[i - 2]) % 1234567;
         }
