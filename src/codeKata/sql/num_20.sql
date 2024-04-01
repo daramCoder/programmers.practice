@@ -202,7 +202,7 @@ ORDER BY B.TOTAL_ORDER
 
 
 
-    git commit --date "2 day ago" -m "[알고리즘 코드 카타]: sql 성분으로 구분한 아이스크림 총 주문량_다른 풀이"
+
 
 
 
