@@ -1,0 +1,43 @@
+Index: codeKata/study_java/CodeBlocks.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package codeKata.study_java;\n\npublic class CodeBlocks {\n\n    private static String aField =\n        \"\";\n    private String bField =\n        \"\";\n    static {\n        aField += \"A\";\n    }\n\n    public CodeBlocks() {\n        aField += \"C\";\n        bField += \"C\";\n    }\n    {\n        aField += \"B\";\n        bField += \"B\";\n    }\n    public void append() {\n        aField += \"D\";\n        bField += \"D\";\n    }\n    public static void main(String[] argv) {\n        System.out.println(aField  + \" (aField)\");\n        CodeBlocks cb = new CodeBlocks();\n        cb.append();\n        System.out.println(aField  + \" (cb.append 후 aField)\");\n        System.out.println(cb.bField);\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/codeKata/study_java/CodeBlocks.java b/codeKata/study_java/CodeBlocks.java
+--- a/codeKata/study_java/CodeBlocks.java	(revision e29ffc9afa9144bc73d09e86ef9da73b184e336b)
++++ b/codeKata/study_java/CodeBlocks.java	(date 1711363574702)
+@@ -2,31 +2,4 @@
+ 
+ public class CodeBlocks {
+ 
+-    private static String aField =
+-        "";
+-    private String bField =
+-        "";
+-    static {
+-        aField += "A";
+-    }
+-
+-    public CodeBlocks() {
+-        aField += "C";
+-        bField += "C";
+-    }
+-    {
+-        aField += "B";
+-        bField += "B";
+-    }
+-    public void append() {
+-        aField += "D";
+-        bField += "D";
+-    }
+-    public static void main(String[] argv) {
+-        System.out.println(aField  + " (aField)");
+-        CodeBlocks cb = new CodeBlocks();
+-        cb.append();
+-        System.out.println(aField  + " (cb.append 후 aField)");
+-        System.out.println(cb.bField);
+-    }
+ }
+\ No newline at end of file
